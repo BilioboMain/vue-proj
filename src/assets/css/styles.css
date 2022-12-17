@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    background: linear-gradient(328deg, #f4b8e7, #d1a5ee, #b06bef);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+input, select {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.main-container {
+    max-width: max-content;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 300px;
+}
+
+.flex-container {
+    display: grid;
+    grid-template-columns: 750px 750px;
+    /*column-gap: 30px;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+}
+
+.graph-block {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    min-height: 270px;
+    box-shadow: 5px 6px 16px 0px rgba(84, 21, 57, 0.2);
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.graph-block > *:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* navigation */
+.nav-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 10px;
+    height: max-content;
+    justify-content: space-around;
+}
+
+.nav-menu__item {
+    padding: 5px;
+    border-bottom: #1C6DD0 solid 2px;
+}
+
+.nav-menu__item :hover {
+    border-radius: 5px 5px 0 0;
+    color: #0048a0;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.032);
+}
+
+.navmenu__link {
+}
+
+/* form */
+.date-form {
+    max-width: 300px;
+    min-height: 270px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.date-fields {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 5px; */
+    /* margin-right: 5px; */
+}
+
+.form__submit {
+    background-color: #1C6DD0;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    padding: 10px 5px;
+}
+
+.form__submit:hover {
+    cursor: pointer;
+}
+
+.form__submit:disabled {
+    cursor: not-allowed;
+    background-color: lightgrey;
+    color: #000;
+
+}
+
+/* chart */
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.chart-title {
+    margin: 0;
+}
+/* picture */
+
+.picture {
+    position: absolute;
+    bottom: -8px;
+    right: 20px;
+    background-image: url("../img/gachi.png");
+    height: 300px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
